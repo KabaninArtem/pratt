@@ -2,29 +2,43 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 300;
   font-family: 'Raleway', Arial, sans-serif;
 }
+h4 {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
 p {
   font-size: 16px;
   line-height: 30px;
+  color: white;
   font-family: 'Lato', Tahoma, sans-serif;
 }
-hr {
-  margin: 50px 0;
-  border-top: 1px solid #ccc; 
+a {
+  font-size: 20px;
+  color: #3bc492;
+  font-family: 'Lato', Arial, sans-serif;
 }
 a:hover,
 a:focus {
   text-decoration: none;
 }
-.centered {
-  text-align: center;
+hr {
+  margin: 50px 0;
+  border-top: 1px solid #ccc; 
 }
-/*HEADER*/
-.header {
+textarea {
+  max-width: 652px;
+}
+.header, .carousel-block {
   background-color: #34495e;
 }
-.header > div {
+.header > div, 
+.carousel-block > div, 
+.footer > div {
   margin-top: 70px;
 }
+
+/*HEADER*/
+
 .header h1 {
   font-size: 70px;
 }
@@ -32,15 +46,12 @@ a:focus {
   font-size: 30px;
 }
 .header h1, 
-.header h2 {
+.header h2,
+.header .row:nth-child(2) h3 {
   color: white;
 }
 .header .row:nth-child(2) {
   margin-top: 30px;
-}
-.header .row:nth-child(2) h3,
-.header .row:nth-child(2) p {
-  color: white;
 }
 .header .row:nth-child(2) h3 {
   font-weight: 700;
@@ -50,13 +61,6 @@ a:focus {
   margin-top: 20px;
 }
 
-@media (max-width: 1200px) {
-  .header .row:nth-child(2) > div:first-child img,
-  .header .row:nth-child(2) > div:last-child img {
-    display: none;
-  }
-}
-
 /*CONTENT*/
 
 .content {
@@ -64,13 +68,46 @@ a:focus {
   border-top: #bdc3c7 solid 5px;
   background-color: #f2f2f2;
 }
-.content .content-title h4 {
-  margin-bottom: 50px;
-  font-size: 36px;
-}
 .content h5 {
   font-size: 24px;
 }
 .content p {
-  font-size: 16px;
+  color: black;
+}
+.content .accordion .panel-heading,
+.content .accordion .panel-body {
+  padding: 30px 0 0;
+  background-color: #f2f2f2;
+} 
+.content .accordion .panel-body {
+  padding: 5px 0;
+  border: none;
+}
+.carousel-block {
+  padding-bottom: 50px;
+}
+.carousel-block h4 {
+  color: white;
+}
+.footer {
+  color: white;
+  background-color: #2f2f2f;
+}
+.footer .form-group {
+  margin: 0 0 20px;
+}
+.creater {
+  background-color: #222222;
+}
+.creater > div {
+  margin: 20px 0;
+}
+@media (max-width: 1200px) {
+  textarea {
+    max-width: 690px;
+  }
+  .header .row:nth-child(2) > div:first-child img,
+  .header .row:nth-child(2) > div:last-child img {
+    display: none;
+  }
 }
