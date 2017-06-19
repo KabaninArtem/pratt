@@ -84,6 +84,9 @@ hr {
   line-height: 30px;
   border: none;
 }
+.main .img-center {
+  margin: 0 auto;
+}
 .carousel-block {
   padding-bottom: 50px;
 }
@@ -114,5 +117,15 @@ hr {
   .header .row:nth-child(2) > div:first-child img,
   .header .row:nth-child(2) > div:last-child img {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .footer textarea {
+    max-width: 940px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer textarea {
+    max-width: 653px;
   }
 }
